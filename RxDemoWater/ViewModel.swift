@@ -18,11 +18,11 @@ class ViewModel {
     let disposeBag = DisposeBag()
 
     func addWater() {
-        currentIntake.value += 1
+        currentIntake.value = min(intakeGoal.value, currentIntake.value + 1)
     }
 
     func takeWater() {
-        currentIntake.value -= 1
+        currentIntake.value = max(1, currentIntake.value - 1)
     }
 
     func startTakingWater() {
