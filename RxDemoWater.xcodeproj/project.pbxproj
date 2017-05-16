@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CED66BBC1EC9E1FD0040694C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED66BBB1EC9E1FD0040694C /* AppDelegate.swift */; };
+		CED66BBE1EC9E1FD0040694C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED66BBD1EC9E1FD0040694C /* ViewController.swift */; };
+		CED66BC11EC9E1FD0040694C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED66BBF1EC9E1FD0040694C /* Main.storyboard */; };
+		CED66BC31EC9E1FD0040694C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED66BC21EC9E1FD0040694C /* Assets.xcassets */; };
+		CED66BC61EC9E1FD0040694C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED66BC41EC9E1FD0040694C /* LaunchScreen.storyboard */; };
+		CED66BD21EC9F09D0040694C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED66BD11EC9F09D0040694C /* ViewModel.swift */; };
+		CED6B5361EC9FC5C003B1BA3 /* WaterIntakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6B5351EC9FC5C003B1BA3 /* WaterIntakeView.swift */; };
+		D09B5616FBFB512CBDEE7185 /* Pods_RxDemoWater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66402E6E0C1DACEE5F007E0 /* Pods_RxDemoWater.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7DD4415050DEE50BF0ED14FC /* Pods-RxDemoWater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxDemoWater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxDemoWater/Pods-RxDemoWater.debug.xcconfig"; sourceTree = "<group>"; };
+		CED66BB81EC9E1FD0040694C /* RxDemoWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxDemoWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED66BBB1EC9E1FD0040694C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CED66BBD1EC9E1FD0040694C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CED66BC01EC9E1FD0040694C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CED66BC21EC9E1FD0040694C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CED66BC51EC9E1FD0040694C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CED66BC71EC9E1FD0040694C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED66BD11EC9F09D0040694C /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CED6B5351EC9FC5C003B1BA3 /* WaterIntakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterIntakeView.swift; sourceTree = "<group>"; };
+		E2E4A5685877242689775091 /* Pods-RxDemoWater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxDemoWater.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxDemoWater/Pods-RxDemoWater.release.xcconfig"; sourceTree = "<group>"; };
+		F66402E6E0C1DACEE5F007E0 /* Pods_RxDemoWater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxDemoWater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CED66BB51EC9E1FD0040694C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09B5616FBFB512CBDEE7185 /* Pods_RxDemoWater.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92368C5B4DF06F987C3AF145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F66402E6E0C1DACEE5F007E0 /* Pods_RxDemoWater.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFB978389D8B09E6A3175EF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DD4415050DEE50BF0ED14FC /* Pods-RxDemoWater.debug.xcconfig */,
+				E2E4A5685877242689775091 /* Pods-RxDemoWater.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CED66BAF1EC9E1FC0040694C = {
+			isa = PBXGroup;
+			children = (
+				CED66BBA1EC9E1FD0040694C /* RxDemoWater */,
+				CED66BB91EC9E1FD0040694C /* Products */,
+				BFB978389D8B09E6A3175EF0 /* Pods */,
+				92368C5B4DF06F987C3AF145 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CED66BB91EC9E1FD0040694C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CED66BB81EC9E1FD0040694C /* RxDemoWater.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED66BBA1EC9E1FD0040694C /* RxDemoWater */ = {
+			isa = PBXGroup;
+			children = (
+				CED66BBB1EC9E1FD0040694C /* AppDelegate.swift */,
+				CED6B5351EC9FC5C003B1BA3 /* WaterIntakeView.swift */,
+				CED66BBD1EC9E1FD0040694C /* ViewController.swift */,
+				CED66BD11EC9F09D0040694C /* ViewModel.swift */,
+				CED66BBF1EC9E1FD0040694C /* Main.storyboard */,
+				CED66BC21EC9E1FD0040694C /* Assets.xcassets */,
+				CED66BC41EC9E1FD0040694C /* LaunchScreen.storyboard */,
+				CED66BC71EC9E1FD0040694C /* Info.plist */,
+			);
+			path = RxDemoWater;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CED66BB71EC9E1FD0040694C /* RxDemoWater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED66BCA1EC9E1FD0040694C /* Build configuration list for PBXNativeTarget "RxDemoWater" */;
+			buildPhases = (
+				6118B0EECED3FAEDFF70831B /* [CP] Check Pods Manifest.lock */,
+				CED66BB41EC9E1FD0040694C /* Sources */,
+				CED66BB51EC9E1FD0040694C /* Frameworks */,
+				CED66BB61EC9E1FD0040694C /* Resources */,
+				BD7D82D4AE1D9AB53A7FED7E /* [CP] Embed Pods Frameworks */,
+				804F3DA1E992FE32CCE95194 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxDemoWater;
+			productName = RxDemoWater;
+			productReference = CED66BB81EC9E1FD0040694C /* RxDemoWater.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CED66BB01EC9E1FC0040694C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Swift Sofia Meetup";
+				TargetAttributes = {
+					CED66BB71EC9E1FD0040694C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5KLV3M3ZXD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CED66BB31EC9E1FC0040694C /* Build configuration list for PBXProject "RxDemoWater" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CED66BAF1EC9E1FC0040694C;
+			productRefGroup = CED66BB91EC9E1FD0040694C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED66BB71EC9E1FD0040694C /* RxDemoWater */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CED66BB61EC9E1FD0040694C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED66BC61EC9E1FD0040694C /* LaunchScreen.storyboard in Resources */,
+				CED66BC31EC9E1FD0040694C /* Assets.xcassets in Resources */,
+				CED66BC11EC9E1FD0040694C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6118B0EECED3FAEDFF70831B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		804F3DA1E992FE32CCE95194 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxDemoWater/Pods-RxDemoWater-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD7D82D4AE1D9AB53A7FED7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxDemoWater/Pods-RxDemoWater-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CED66BB41EC9E1FD0040694C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED66BBE1EC9E1FD0040694C /* ViewController.swift in Sources */,
+				CED66BD21EC9F09D0040694C /* ViewModel.swift in Sources */,
+				CED6B5361EC9FC5C003B1BA3 /* WaterIntakeView.swift in Sources */,
+				CED66BBC1EC9E1FD0040694C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CED66BBF1EC9E1FD0040694C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED66BC01EC9E1FD0040694C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CED66BC41EC9E1FD0040694C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED66BC51EC9E1FD0040694C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CED66BC81EC9E1FD0040694C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CED66BC91EC9E1FD0040694C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CED66BCB1EC9E1FD0040694C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD4415050DEE50BF0ED14FC /* Pods-RxDemoWater.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KLV3M3ZXD;
+				INFOPLIST_FILE = RxDemoWater/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssmeetup.RxDemoWater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CED66BCC1EC9E1FD0040694C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E4A5685877242689775091 /* Pods-RxDemoWater.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KLV3M3ZXD;
+				INFOPLIST_FILE = RxDemoWater/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssmeetup.RxDemoWater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CED66BB31EC9E1FC0040694C /* Build configuration list for PBXProject "RxDemoWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED66BC81EC9E1FD0040694C /* Debug */,
+				CED66BC91EC9E1FD0040694C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED66BCA1EC9E1FD0040694C /* Build configuration list for PBXNativeTarget "RxDemoWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED66BCB1EC9E1FD0040694C /* Debug */,
+				CED66BCC1EC9E1FD0040694C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CED66BB01EC9E1FC0040694C /* Project object */;
+}
