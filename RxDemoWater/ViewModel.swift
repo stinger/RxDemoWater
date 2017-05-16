@@ -11,20 +11,18 @@ import RxSwift
 import RxCocoa
 
 class ViewModel {
+
     let animationDuration: CFTimeInterval = 0.6
-    let intakeProgress = Variable<CGFloat>(0.0)
+    let intakeGoal = Variable<Int>(8)
+    let currentIntake = Variable<Int>(0)
     let disposeBag = DisposeBag()
 
     func addWater() {
-        if intakeProgress.value < 1.0 {
-            intakeProgress.value = min(1.0, intakeProgress.value + 0.2)
-        }
+        currentIntake.value += 1
     }
 
     func takeWater() {
-        if intakeProgress.value > 0.0 {
-            intakeProgress.value = max(0.0, intakeProgress.value - 0.2)
-        }
+        currentIntake.value -= 1
     }
 
     func startTakingWater() {

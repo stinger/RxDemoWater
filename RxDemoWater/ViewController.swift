@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     }
 
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-        viewModel.intakeProgress.value = 0.0
+        viewModel.currentIntake.value = 1
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -48,8 +48,12 @@ class ViewController: UIViewController {
     }
 
     private func setupDataObservers() {
-        viewModel.intakeProgress.asObservable()
+        Observable.combineLatest(viewModel.intakeGoal.asObservable(), viewModel.currentIntake.asObservable())
             .skip(1)
+            .map { goal, intake in
+                return max(0.0, min(1.0, (CGFloat(intake) / CGFloat(goal))))
+            }
+            .filter { $0 > 0.0 }
             .subscribe(onNext: { [weak self] progress in
                 self?.intakeView.setProgress(progress, animated: true)
             })
