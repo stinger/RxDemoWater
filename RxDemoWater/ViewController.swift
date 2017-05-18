@@ -49,11 +49,11 @@ class ViewController: UIViewController {
 
     private func setupDataObservers() {
         Observable.combineLatest(viewModel.intakeGoal.asObservable(), viewModel.currentIntake.asObservable())
-            .skip(1)
+            .filter { $1 > 0 }
             .map { goal, intake in
                 return max(0.0, min(1.0, (CGFloat(intake) / CGFloat(goal))))
             }
-            .filter { $0 > 0.0 }
+            .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] progress in
                 self?.intakeView.setProgress(progress, animated: true)
             })
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
             })
             .disposed(by: disposeBag)
 
-        //viewModel.startTakingWater()
+        viewModel.startTakingWater()
     }
 }
 

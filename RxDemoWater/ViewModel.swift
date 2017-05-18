@@ -14,7 +14,7 @@ class ViewModel {
 
     let animationDuration: CFTimeInterval = 0.6
     let intakeGoal = Variable<Int>(8)
-    let currentIntake = Variable<Int>(0)
+    let currentIntake = Variable<Int>(1)
     let disposeBag = DisposeBag()
 
     func addWater() {
