@@ -37,7 +37,7 @@ class WaterIntakeView: UIView {
     private lazy var emptyImageAnimation: CABasicAnimation = {
         let animation = CABasicAnimation()
         animation.keyPath = "path"
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.isRemovedOnCompletion = false
         return animation
     }()
@@ -45,7 +45,7 @@ class WaterIntakeView: UIView {
     private let fillImageAnimation: CABasicAnimation = {
         let animation = CABasicAnimation()
         animation.keyPath = "path"
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.isRemovedOnCompletion = false
         return animation
     }()

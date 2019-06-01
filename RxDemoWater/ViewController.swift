@@ -31,8 +31,8 @@ class ViewController: UIViewController {
         setupInteractions()
     }
 
-    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-        viewModel.currentIntake.value = 1
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        viewModel.currentIntake.accept(1)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -68,6 +68,7 @@ class ViewController: UIViewController {
             .disposed(by: disposeBag)
 
         viewModel.startTakingWater()
+            .disposed(by: disposeBag)
     }
 }
 

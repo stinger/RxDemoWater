@@ -8,29 +8,28 @@
 
 import Foundation
 import RxSwift
-import RxCocoa
+import RxRelay
 
 class ViewModel {
 
     let animationDuration: CFTimeInterval = 0.6
-    let intakeGoal = Variable<Int>(8)
-    let currentIntake = Variable<Int>(1)
-    let disposeBag = DisposeBag()
+    let intakeGoal = BehaviorRelay<Int>(value: 8)
+    let currentIntake = BehaviorRelay<Int>(value: 1)
 
     func addWater() {
-        currentIntake.value = min(intakeGoal.value, currentIntake.value + 1)
+        currentIntake.accept(min(intakeGoal.value, currentIntake.value + 1))
     }
 
     func takeWater() {
-        currentIntake.value = max(1, currentIntake.value - 1)
+        currentIntake.accept(max(1, currentIntake.value - 1))
     }
 
-    func startTakingWater() {
-        Observable<Int>.interval(RxTimeInterval(5.0), scheduler: ConcurrentDispatchQueueScheduler(qos: .default))
+    func startTakingWater() -> Disposable {
+        return Observable<Int>.interval(DispatchTimeInterval.seconds(5), scheduler: ConcurrentDispatchQueueScheduler(qos: .default))
             .subscribe(onNext: { [weak self] interval in
                 self?.takeWater()
             })
-            .disposed(by: disposeBag)
+
     }
 
 }
